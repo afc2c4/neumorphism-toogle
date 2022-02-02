@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #e5e5e5;
+}
+
+input {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+ol {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+li {
+    margin: 1%;
+}
+
+li label i {
+    padding: 30px;
+    font-size: 50px;
+    color: #333333;
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li label input:checked~i {
+    color: #fe025b;
+    transform: scale(0.97);
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.8), 3px 3px 4px rgba(0, 0, 0, 0.08), inset -2px -2px 8px rgba(255, 255, 255, 0.8), inset 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
